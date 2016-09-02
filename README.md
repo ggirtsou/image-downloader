@@ -6,6 +6,31 @@ request and checks the `Content-Type`, and `Content-Length` headers in HTTP Resp
 
 If server reports an image is at that URL, Image Downloader will issue a `GET` request and download the image.
 
+Requirements
 ====
+* PHP 7 or greater
+* `php-gd` extension
+* `php-curl` extension
+
+Versions
+====
+This project follows [semver](http://semver.org/)
+
+Installation
+====
+TODO
+
+Usage
+====
+TODO
+
+Tests
+====
+You can run tests using [PHPUnit](https://phpunit.de/):
+```bash
+$ vendor/bin/phpunit -c phpunit.xml.dist tests
+```
+
 TODO:
+====
 * Make this a RESTful service
