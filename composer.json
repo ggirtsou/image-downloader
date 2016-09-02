@@ -1,0 +1,31 @@
+{
+  "name": "trivialmatters/image-downloader",
+  "description": "A PHP service that downloads remote images and saves them in local file system",
+  "keywords": ["image download"],
+  "type": "project",
+  "homepage": "https://github.com/trivialmatters/image-downloader",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "George Gkirtsou",
+      "email": "ggirtsou@users.noreply.github.com",
+      "homepage": "https://github.com/ggirtsou"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "guzzlehttp/guzzle": "^6.2",
+    "ext-gd": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.5"
+  },
+  "autoload": {
+    "psr-4": {"Gkirtsou\\": "src/"},
+    "classmap": ["src/"]
+  },
+  "support": {
+    "issues": "https://github.com/trivialmatters/image-downloader/issues",
+    "source": "https://github.com/trivialmatters/image-downloader"
+  }
+}
