@@ -11,6 +11,7 @@ Requirements
 * PHP 7 or greater
 * `php-gd` extension
 * `php-curl` extension
+* PHP [Multi-Byte](http://php.net/manual/en/book.mbstring.php) support enabled
 
 Versions
 ====

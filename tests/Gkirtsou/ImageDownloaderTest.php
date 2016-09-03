@@ -19,6 +19,24 @@ class ImageDownloaderTest extends \PHPUnit_Framework_TestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        $this->assertInstanceOf(ImageDownloader::class, new ImageDownloader($client, 1000));
+        $fileSystem = $this->getMockBuilder('\Psr\Http\Message\StreamInterface')
+            ->getMock();
+
+        $contentTypeValidator = $this->getMockBuilder('\Gkirtsou\Validator\ContentTypeValidator')
+            ->disableOriginalConstructor()
+            ->getMock();
+
+        $contentLengthValidator = $this->getMockBuilder('\Gkirtsou\Validator\ContentLengthValidator')
+            ->disableOriginalConstructor()
+            ->getMock();
+
+        $this->assertInstanceOf(ImageDownloader::class, new ImageDownloader(
+            $client,
+            $fileSystem,
+            $contentTypeValidator,
+            $contentLengthValidator
+        ));
     }
+
+    // @todo add more tests
 }
